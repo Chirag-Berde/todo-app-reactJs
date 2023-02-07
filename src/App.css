@@ -2,4 +2,52 @@
   text-align: center;
 }
 
+.navbar-custom:hover{
+  transform: translateY(-1px);
+  font-weight: 500;
+}
+/* adding animation to navbar links */
+.nav-link {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #031D44;
+  padding: 20px 0px;
+  margin: 0px 15px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
 
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 82%;
+}
+
+/* animation ends here */
+
+/* logo css */
+.todo-logo{
+  width: 60px;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  body {
+    background-color: #de3163;
+  }
+}

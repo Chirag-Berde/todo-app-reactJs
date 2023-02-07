@@ -5,7 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 const AddTodo = (props) => {
     const [currentTaskName, setcurrentTaskName] = React.useState('')
-    // manipulating dom
+    // manipulating dom 
     const inputRef=React.useRef(null)
 
     // getting the values from the input box
@@ -29,7 +29,7 @@ const AddTodo = (props) => {
         <>
             <section id='add-todo'>
                 {/* add todo input goes here */}
-                <InputGroup className="mb-3 mt-4">
+                <InputGroup className="mb-3 mt-4 border border-dark rounded">
                     <Form.Control
                         placeholder="Add Tasks"
                         aria-describedby="basic-addon2" autoComplete='off'

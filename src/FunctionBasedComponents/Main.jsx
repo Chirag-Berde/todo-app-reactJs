@@ -2,7 +2,7 @@ import * as React from 'react';
 import AddTodo from './AddTodo';
 import TodoList from './TodoList';
 import Card from 'react-bootstrap/Card';
-// storing all the todo's in the local storage even after refreshing the page you will get all the todos
+// storing all the todo's in the local storage so even after refreshing the page you will get all the todos
 const getLocalItems = () => {
     let list = localStorage.getItem("list")
     if (list) {
@@ -46,10 +46,10 @@ const Main = () => {
     return (
         <>
             <div className="container d-flex justify-content-center mt-5">
-                <div className="col-md-8">
+                <div className="col-md-8 border border-dark rounded">
                     <Card>
                         <Card.Body>
-                            <h1>Your ToDo's</h1>
+                            <h1 className='display-5'>Your ToDo's</h1>
                             <AddTodo callback={addcallback} />
                             <TodoList onEdit={editCallback} onDelete={deleteCallback} tasks={todoList} />
                         </Card.Body>

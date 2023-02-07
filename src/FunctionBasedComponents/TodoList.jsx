@@ -5,10 +5,10 @@ const TodoList = (props) => {
     return (
         <>
                 <section id='todo-list'>
-                    <Table striped bordered hover>
+                    <Table striped bordered hover className='border border-dark rounded'>
                         <thead>
                             <tr>
-                                <th>#</th>
+                                <th>Sr no</th>
                                 <th>Task Name</th>
                                 <th colSpan={2}>Action</th>
                             </tr>
@@ -16,7 +16,7 @@ const TodoList = (props) => {
                         <tbody>
                             {props.tasks.map((item, index) => {
                                 return <tr key={index}>
-                                    <td>{index + 1}</td>
+                                    <td>{index + 1}.</td>
                                     <td>{item.name}</td>
                                     <td> <Button onClick={() => props.onEdit(item.id, item.name)} variant="primary">Edit</Button></td>
                                     <td> <Button onClick={() => props.onDelete(item.id)} variant="primary">Delete</Button></td>

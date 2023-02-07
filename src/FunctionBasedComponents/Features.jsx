@@ -1,5 +1,6 @@
 import React from "react";
 import todoImage from './todoImage.jpg'
+
 const Features = () => {
     return (
         <>
@@ -17,7 +18,7 @@ const Features = () => {
                     </div>
                     <div className="col-md-6">
 
-                        <img style={{width:"100%", margin:"50px 20px",borderRadius:"10px"}} src={todoImage} alt="" />
+                        <img className="feature-image" style={{width:"100%", margin:"50px 20px",borderRadius:"10px"}} src={todoImage} alt="todoimage" />
                     </div>
                 </div>
             </div>
