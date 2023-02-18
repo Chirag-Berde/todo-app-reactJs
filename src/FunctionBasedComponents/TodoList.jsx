@@ -8,6 +8,7 @@ const TodoList = (props) => {
                     <Table striped bordered hover className='border border-dark rounded'>
                         <thead>
                             <tr>
+                                
                                 <th>Sr no</th>
                                 <th>Task Name</th>
                                 <th colSpan={2}>Action</th>
@@ -30,3 +31,5 @@ const TodoList = (props) => {
 }
 
 export default TodoList
+
+// "homepage": "https://Chirag-Berde.github.io/todo-app-reactJs",

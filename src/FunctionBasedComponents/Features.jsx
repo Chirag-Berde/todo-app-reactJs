@@ -18,7 +18,7 @@ const Features = () => {
                     </div>
                     <div className="col-md-6">
 
-                        <img className="feature-image" style={{width:"100%", margin:"50px 20px",borderRadius:"10px"}} src={todoImage} alt="todoimage" />
+                        <img className="feature-image" style={{ margin:"50px 20px",borderRadius:"10px"}} src={todoImage} alt="todoimage" />
                     </div>
                 </div>
             </div>

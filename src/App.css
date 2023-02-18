@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.feature-image{
+    width: 85%;
+}
 .navbar-custom:hover{
   transform: translateY(-1px);
   font-weight: 500;
